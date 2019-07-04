@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guest Books</title>
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<script language="javascript" src="js/java.js"></script>
+	<script type='text/javascript'>
+
+</script>
+	<style>
+		body{
+			background-image: url(img/568216.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment:fixed;
+		}
+	</style>
+</head>
+<body>
+
+
+	<div class="menubar" align="right">
+		<form name="formcari" onSubmit="search()"><pre>																			<input class="search" name="keyword" type="text" placeholder="Cari..." required><input class="button" type="submit" value="Cari"></form></pre>
+	
+	<font color="white" size="4"><script type="text/javascript">
+	var months =['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember']; // var = variabel
+	var myDays = ['Minggu','Senin','Selasa','Rabu','Kamis','Jum&#39;at','Sabtu']; // var = variabel
+	var date = new Date(); // var = variabel
+	var day = date.getDate(); // var = variabel		get = menampilkan data
+	var month = date.getMonth(); // var = variabel		get = menampilkan data
+	var thisDay = date.getDay(), // var = variabel		get = menampilkan data
+
+    thisDay = myDays[thisDay];
+	var yy = date.getYear(); // var = variabel		get = menampilkan data
+	var year = (yy < 1000) ? yy + 1900 : yy; // var = variabel
+	document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year); //document.write = menampilkan output
+	
+	</script></font>
+
+	</div>
+
+	<div class="menu">
+		<br>
+		<center><img src="img/1.png" height="100px"></center>
+		<center><h1>BUKAN MANUSIA</h1></center>
+
+		<?php
+		$Nama = $NIM ="";
+	if($_SERVER["REQUEST_METHOD"]== "POST"&& isset($_POST["Nama"])&& isset($_POST["NIM"])){
+		$Nama =$_POST["Nama"];
+		$NIM = $_POST["NIM"];
+	}
+	?>
+		<form action="guest.php" method="POST">
+			<fieldset>
+				<legend><h1>Guest Books</h1></legend>
+	<pre><h2>Nama:	<input type="text" name="Nama" required="required"></h2></pre>
+	<pre><h2>Nim:	<input type="number" name="NIM" required="required"></h2></pre>
+	<input type="submit" value="Login" class="tombol"><br>
+	
+
+</fieldset>
+</form>
+	</div>
+
+		<br>
+		<br>
+	
+	<div class="footer">
+		<br>
+		<font color="white"><b>&copy</b></font>&nbsp Aldi Rizki - Universitas Ahmad Dahlan - Yogyakarta - <font color="white"><b>2019</b></font>
+	</div>
+
+</body>
+</html>

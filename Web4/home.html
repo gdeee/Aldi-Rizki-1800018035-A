@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pemrograman Web</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script language="javascript" src="js/java.js"></script>
+	<script>
+     alert('Halo... Selamat Datang'); // Alert javascript
+   </script>
+	<style>
+		body{
+			background-image: url(img/568216.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="menubar" align="right">
+		<ul>
+			<li><a href="home.html"><b>Home</b></a></li>
+			<li><a href="biodata.html"><b>Biodata</b></a></li>
+			<li><a href="materi.html"><b>Materi</a></b></li>
+			<li><a href="guestbooks.php"><b>Pengunjung</a></b></li>
+		</ul>
+	<form name="formcari" onSubmit="search()"><pre>													<input class="search" name="keyword" type="text" placeholder="Cari..." required><input class="button" type="submit" value="Cari"></form></pre>
+
+	<font color="white" size="4" ><script type="text/javascript">
+	var months =['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember']; //var = variabel
+	var myDays = ['Minggu','Senin','Selasa','Rabu','Kamis','Jum&#39;at','Sabtu'];
+	var date = new Date();
+	var day = date.getDate(); //GetDate = untuk mengambil waktu nilai lokal sekarang
+	var month = date.getMonth(); //GetMonth = untuk mengambil waktu nilai lokal sekarang
+	var thisDay = date.getDay(),
+
+    thisDay = myDays[thisDay];
+	var yy = date.getYear();
+	var year = (yy < 1000) ? yy + 1900 : yy;
+	document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+	</script></font>
+	</div>
+		<div class="menu" align="center" style="display: block;">
+		<br><br><br>
+		<font size="40"><p>SELAMAT DATANG DI WEBSITE INI</p></font>
+		<hr width="60%">
+		<h4>Silahkan klik tombol dibawah untuk melanjutkan ke halaman Biodata.</h4>
+		<a href="biodata.html" class="tombol">Biodata</a>
+
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+	<div class="footer">
+		<br>
+		<font color="white"><b>&copy</b></font>&nbsp Aldi Rizki - Universitas Ahmad Dahlan - Yogyakarta - <font color="white"><b>2019</b></font>
+	</div>
+
+</body>
+</html>

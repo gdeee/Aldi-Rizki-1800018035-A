@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Materi</title>
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<script language="javascript" src="js/java.js"></script>
+	<style>
+		body{
+			background-image: url(img/568216.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment:fixed;
+		}
+	</style>
+</head>
+<body>
+	<div class="menubar" align="right">
+		<ul>
+			<li><a href="home.html"><b>Home</b></a></li>
+			<li><a href="biodata.html"><b>Biodata</b></a></li>
+			<li><a href="materi.html"><b>Materi</a></b></li>
+			<li><a href="guestbooks.php"><b>Pengunjung</a></b></li>
+		</ul>
+		<form name="formcari" onSubmit="search()"><pre>													<input class="search" name="keyword" type="text" placeholder="Cari..." required><input class="button" type="submit" value="Cari"></form></pre>
+
+	<font color="white" size="4"><script type="text/javascript">
+	var months =['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+	var myDays = ['Minggu','Senin','Selasa','Rabu','Kamis','Jum&#39;at','Sabtu'];
+	var date = new Date();
+	var day = date.getDate();
+	var month = date.getMonth();
+	var thisDay = date.getDay(),
+
+    thisDay = myDays[thisDay];
+	var yy = date.getYear();
+	var year = (yy < 1000) ? yy + 1900 : yy;
+	document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+	</script></font>
+	</div>
+	<br><br><br>
+	<div class="menu" style="background-color: #0006; border: 1px solid #17202A; height: auto; margin: 10px 0px; padding: 5px; text-align: left; width: auto; ">
+
+	<center><h1><font color="white">HALAMAN RANGKUMAN MATERI</font></h1></center>
+	<hr width="90%">
+		<p><br>
+			<b>1. MATERI 1 : PERKENALAN WEB</b>
+			<br><br>
+				Internet adalah Jaringan komputer yang sangat besar yang Menggunakan jaringan komunikasi di seluruh dunia dan merupakan Jaringan besar yang menghubungkan jaringan kecil dan bergerak di Protokol TCP/IP.
+			<br><br>
+			Tugas web server adalah untuk menerima permintaan dari klien dan mengirimkan kembali berkas yang diminta oleh klien tersebut. Perangkat lunak web server terdapat pada komputer server, dan di komputer ini pula data-data website tersimpan dengan rapih. Sama halnya dengan komputer klien, komputer server juga harus terhubung dengan jaringan internet untuk dapat diakses oleh klien.Pada saat klien (browser) meminta data web page kepada server, maka instruksi permintaan data oleh browser tersebut akan dikemas di dalam TCP yang merupakan protokol transport  dan dikirim ke alamat yang dalam hal ini merupakan protokol berikutnya yaitu HTTP dan atau HTTPS.Data yang diminta dari browser ke web server disebut dengan HTTP request yang kemudian akan dicarikan oleh web server di dalam komputer server. Jika ditemukan, data tersebut akan dikemas oleh web server dalam TCP dan dikirim kembali ke browser untuk ditampilkan.
+			<br><br>
+			Web adalah Layanan internet yang berjalan pada protokol aplikasi HTTP
+			<br><br>
+			Aplikasi berbasis internet Menggunakan protokol aplikasi yang sudah ada atau mendefinisikan protokol sendiri sedangkan aplikasi berbasis web Menggunakan protokol HTTP.
+			<br><br>
+			URL adalah sistem pengalamatan file yang digunakan di internet.
+			<br><br>
+			Web Server merupakan suatu software yang dijalankan pada komputer server dan berfungsi agar dokumen web yang disimpan di server dapat diakses oleh user di internet.
+			<br><br>
+			Perangkat lunak web server yang pernah populer : Apache (Linux & Windows), MS Internet Information Server / IIS (Windows) / PWS (Win98), Tomcat, untuk Java (Windows & Linux).
+			<br><br><br>
+			Perkembangan Web :<br>
+			<img src="img/web.png" width="600px" height="300px" align="center">
+			<br><br><br><br><br>
+			<b>2. MATERI 2 : CLIENT SIDE PROGRAMMING DAN HTML</b>
+			<br><br>
+			Client side programming biasanya lebih banyak dikerjakan olehfront-end developer. Adapun komponennya : HTML,CSS, dan Javascript.
+			HTML (HyperText Markup Language) adalah standard bahasa yang digunakan untuk menampilkan dokumen web. Fungsinya Mengontrol tampilan konten, Memuat form untuk transaksi data, Memuat obyek lain seperti image, audio, video,dll.
+			<br><br>
+			- HTML TOOLS : 1.Browser (Software di client untuk menerjemahkan tag HTML) contohnya : IE, Chrome, Firefox, Opera, dll. 2.Editor (Program untuk menulis tag HTML) contohnya : Notepad, Notepad++, Sublime, Dreamweaver, dll.
+			<br><br>
+			Di bahasa pemrograman pada umumnya biasanya kita mengenal code, pada HTML kita mengenal tag. Contoh tag: body,head,div,img.
+			<br><br>
+			Struktur document HTML  bisa di bagi mejadi tiga bagian utama:html, head, dan body.Di dalam fungsi head bagian ini biasanya dimuat tag title yang menampilkan judul dari halaman web.Tag body di gunakan untuk menampilkan text, image link dan semua yang akan di tampilkan pada web page.
+			<br><br>
+			Block level element: terdapat 6 tingkatan, yaitu H1 sampai H6. Ada juga paragraf untuk Menampilkan teks dalam bentuk paragraf diartikan dalam huruf p. kemudian br untuk memulau baris baru, Font untuk menentukan format tampilan font, dan Color sebagai attribute dengan 3 kategori warna (RGB).
+			<br><br><br><br><br>
+			<b>3. MATERI 3 : HTML</b>
+			<br><br>
+			Untuk membentuk layout halaman bisa menggunakan: Table,Frame,Grid view (div),HTML5 element.
+			Ada beberapa tag yang harus diingat untuk membuat tabel di HTML:<br>
+			- Tag (table) untuk membungkus tabelnya<br>
+			- Tag (thead) untuk membungkus bagian kepala tabel<br>
+			- Tag (tbody) untuk membungkus bagian body dari tabel<br>
+			- Tag (tr) (tabel row) untuk membuat baris<br>
+			- Tag (td) (table data) untuk membuat sel<br>
+			- Tag (th) (table head) untuk membuat judul pada header<br>
+			<br><br>
+			Web tidak hanya digunakan untuk menampilkan informasi saja, Web juga digunakan untuk mengambil informasi atau data dari pengunjung.Salah satu cara untuk mengambil informasi dari pengunjung ialah menggunakan form. Form di HTML dapat kita buat dengan tag (form).Tag form akan membutuhkan beberapa atribut untuk dapat berfungsi dengan seharusnya.
+			<br><br>
+			Atribut pertama adalah action, yang berfungsi untuk menjelaskan kemana data form akan dikirimkan. Biasanya nilai dari atribut action ini adalah alamat dari sebuah halaman PHP yang digunakan untuk memproses isi data form.Atribut kedua adalah method, yang berfungsi untuk menjelaskan bagaimana data isian form akan dikirim oleh web browser. Nilai dari atribut method ini bisa berupa get atau post.
+			<br><br>
+			Perbedaan method get dan method post adalah, jika kita mengisi atribut method dengan get (dimana ini adalah nilai default seandainya atribut method tidak ditulis) maka isian form akan terlihat pada url browser. Method get ini biasanya digunakan untuk query pencarian. Method post biasanya digunakan untuk data yang lebih sensitif seperti yang berisi password, atau registrasi user. Data hasil form tidak akan terlihat pada browser.
+			<br><br>
+			Tag input merupakan tag paling banyak digunakan di dalam form dan memiliki banyak bentuk, mulai dari isian text biasa, text password, checkbox, radio, sampai dengan tombol submit, semuanya dalam bentuk tag (input).
+			<br><br>
+			Tag textarea pada dasarnya sama dengan input type text, namun lebih besar dan dapat berisi banyak baris. Panjang dan banyak baris untuk text area di atur melalui atribut rows dan cols, atau melalui CSS.
+			<br><br>
+			Tag select digunakan untuk inputan yang telah tersedia nilainya, dan user hanya dapat memilih dari nilai yang ada. Tag select digunakan bersama-sama dengan tag option untuk membuat box pilihan.<br>
+			<br><br><br><br><br>
+			<b>3. MATERI 4 : CSS</b>
+			<br><br>
+			CSS (Cascading Style Sheet) adalah salah satu bahasa desain web (style sheet language) yang mengontrol format tampilan sebuah halaman web yang ditulis dengan menggunakan penanda(markup laguage. Biasanya CSS digunakan untuk mendesain sebuah halaman HTML dan XHTML, tetapi sekarang CSS bisa diaplikasikan untuk segala dokumenXML, termasuk SVG dan XUL bahkan ANDROID.
+			<br><br>
+			CSS berfungsi mendefenisikan style untuk suatu teks dengan jenis huruf,ukuran,warna tertentu.
+			<br><br>
+			Adapun metode pembuatan CSS : 1. Style Sheet Inline (mengetikkan langsung dalam tag html sebagai atribut), 2. Style Sheet Internal (Menggunakan tag style di dalam tag head), 3. Style Sheet External (Menyimpan informasi style ke dalam sebuah file dengan ekstensi/type file .css).
+			<br><br>
+			Adapun daftar warna dalam CSS :<br>
+			<img src="img/warna.png" width="600px" height="300px" align="center">
+			<br><br><br>
+			Selain menggunakan element html sebagai selector pada css, kita bisa menggunakan selector yang kita buat sendiri. Selector ini selanjutnya bisa kita pakai pada elemen-element dalam HTML dengan cara memanggilnya. Ada dua selector yang bisa kita buat yakni id dan class.
+			<br><br>
+			Selector id digunakan untuk menentukan style bagian unik dari html. Unik disini artinya satu nama id hanya bisa digunakan satu kali pada sebuah halaman web. Apabila satu nama ID digunakan lebih dari satu kali pada sebuah halaman, maka style hanya akan berlaku pada id yang pertama saja. Selector ID pada syntax CSS ditandai dengan “#”.<br>
+			<img src="img/id.png" width="500px" height="150px" align="center">
+			<br><br><br>
+			Selector class digunakan untuk menentukan style dari sebuah group elemen. Berbeda dengan ID, selector class bisa dipakai berulangkali pada sebuah dokumen web. Artinya sebuah nama class dapat dipanggil beberapa kali pada elemen-elemen yang ada pada sebuah halaman web. Selector class dituliskan dengan ditandai dengan tanda titik “.” .<br>
+			<img src="img/class.png" width="500px" height="150px" align="center">
+			</p>
+			<br><br><br><br><br>
+	</div>
+	<div class="footer">
+		<br>
+		<font color="white"><b>&copy</b></font>&nbsp Aldi Rizki - Universitas Ahmad Dahlan - Yogyakarta - <font color="white"><b>2019</b></font>
+	</div>
+
+</body>
+</html>
